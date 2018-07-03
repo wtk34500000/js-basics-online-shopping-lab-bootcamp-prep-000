@@ -26,11 +26,18 @@ function viewCart() {
   }
   if(cart.length>1){
   for(let i=0; i<cart.length-1; i++){
+<<<<<<< HEAD
     line.push(` `+cart[i].itemName + ` at $`+ cart[i].itemPrice)
     }
   }
   return `In your cart, you have`+ line +`, and `+ cart[cart.length-1].itemName+ ` at $`+
     cart[cart.length-1].itemPrice+`.`
+=======
+    line.push(cart[i].itemName + `at $`+ cart[i].itemPrice)
+    }
+  }
+//  return `In your cart, you have ${line}, and` + //cart[cart[cart.length-1]].itemName+ `at $`+cart[cart//.length-1].itemPrice+`.`
+>>>>>>> 0fe75dec562b2066d8dbf46235577e8eb19bff14
 
 
   }
@@ -46,11 +53,21 @@ function total() {
 
 function removeFromCart(item) {
   for(let i=0; i<cart.length; i++){
+<<<<<<< HEAD
     if(cart[i].itemName === item){
+=======
+    for(var list in cart[i]){
+    if(list === item){
+>>>>>>> 0fe75dec562b2066d8dbf46235577e8eb19bff14
        cart.splice(i, 1)
        return cart
       }  
     }
+<<<<<<< HEAD
+=======
+       
+  }
+>>>>>>> 0fe75dec562b2066d8dbf46235577e8eb19bff14
   return 'That item is not in your cart.'
 }
 
